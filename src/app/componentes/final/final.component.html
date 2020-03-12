@@ -31,20 +31,40 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div style="text-align: center;">
-    <label>
-        Perfiles: 
-        <input type="text" formControlName="perfiles" placeholder="Perfiles">
-    </label>
-    <br>
-    <label>
-        Medidas:
-        <input type="text" formControlName="medidas" placeholder="Medidas">
-    </label>
-    <br>
-</div>
+<section id="login" class="mb-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+        <div class="card_login">
+          <div class="card">
+            <div class="card-body text-center">
+              <form id="f01" formGroup="formGroup">
+                <h1>Final</h1>
+                <br>
+                <label>Proveedor: </label>
+
+                <select name="miselect">
+                <option value="Seleccionar"> Seleccionar</option>
+                <option value="Tigo"> Tigo</option>
+                <option value="Telus"> Telus</option>
+                </select>
+                <br> Peso:
+                <input type="text" formControlName="peso" placeholder="Peso">
+                <br>
+                <label>
+                Codigo:
+                </label>
+                <input type="text" formControlName="codigo" placeholder="Codigo">
+                <br>
+                <label>
+                Envio:
+                </label>
+                <input text="text" formControlName="envio" placeholder="Envio">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
