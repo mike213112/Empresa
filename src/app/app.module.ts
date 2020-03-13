@@ -1,3 +1,4 @@
+import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
@@ -12,6 +13,10 @@ import { InventarioComponent } from './componentes/inventario/inventario.compone
 import { DespachoComponent } from './componentes/despacho/despacho.component';
 import { LoginComponent } from './componentes/login/login.component';
 
+const routes: Routes = [
+  { path: 'login', component: LoginComponent }
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +26,15 @@ import { LoginComponent } from './componentes/login/login.component';
     VerComponent,
     FinalComponent,
     InventarioComponent,
-    DespachoComponent
+    DespachoComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
